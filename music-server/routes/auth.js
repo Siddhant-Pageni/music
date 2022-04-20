@@ -4,9 +4,9 @@ const passport = require('passport');
 
 const router = express.Router();
 
-router.post('/login', passport.authenticate('local'), (req, res) => {
-    res.send(200);
-});
+// router.post('/login', passport.authenticate('local'), (req, res) => {
+//     res.json({status: 200});
+// });
 
 // To give the response to only the authenticated users, do this
 // router.get('/', async (req, res) => {
