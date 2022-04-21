@@ -1,6 +1,10 @@
-.player {
+.playbar {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+.playlistPlayButton {
+    margin-left: 10px;
 }

@@ -2,19 +2,19 @@ let musics = [
     {
         musicId: 1,
         title: "Live It",
-        src: "../sample-music/live-it-infraction-main-version-01-42-4118.mp3",
+        src: "https://ia800905.us.archive.org/19/items/FREE_background_music_dhalius/backsound.mp3",
         releaseDate: "2022-2-2"
     },
     {
         musicId: 2,
         title: "Trendsetter",
-        src: "../sample-music/trendsetter-mood-maze-main-version-02-53-1004.mp3",
+        src: "https://ia800905.us.archive.org/19/items/FREE_background_music_dhalius/FaceBangSonic.mp3",
         releaseDate: "2022-2-3"
     },
     {
         musicId: 3,
         title: "Tropicana",
-        src: "../sample-music/tropicana-soundroll-main-version-02-15-1725.mp3",
+        src: "https://ia800905.us.archive.org/19/items/FREE_background_music_dhalius/BloodCity.mp3",
         releaseDate: "2022-2-4"
     },
 ];

@@ -29,7 +29,6 @@ exports.authenticate = (req, res, next) => {
 };
 
 exports.logout = (req, res, next) => {
-    console.log(req.body.session);
     User.logout(req.body.session);
     res.json({message: "done"});
 };

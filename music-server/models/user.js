@@ -28,8 +28,7 @@ module.exports = class User {
         if (index > -1) {
             // login successful
             const user = users[index];
-            user.session =
-                "musicAppSesssion-" + Math.ceil(Date.now());
+            user.session = "musicAppSesssion-" + Math.ceil(Date.now());
             console.log(`list after session is updated! ->`);
             console.log(User.fetchAll());
             return { session: user.session };
@@ -39,11 +38,14 @@ module.exports = class User {
     }
 
     static logout(session) {
-        const u = users.find((u) => u.session == session);
-        console.log(u);
-        u.session = "";
-        console.log(u);
-        return {'status': 200};
+        const index = users.findIndex((u) => u.session == session);
+        if (index > -1) {
+            const user = users[index];
+            console.log(users);
+            user.session = "";
+            console.log(users);
+        }
+        return { status: 200 };
     }
 
     static findByUsername(username) {
@@ -62,7 +64,7 @@ module.exports = class User {
             // The music is not on the playlist
             u.playlist.push(musicId.toString());
             console.log(`Music ${musicId} added to playlist`);
-            return {'status': 200};
+            return { status: 200 };
         } else {
             // This music is already on the playlist
             console.log("Music already on the playlist");
@@ -80,7 +82,7 @@ module.exports = class User {
             // This music is already on the playlist
             u.playlist.splice(index, 1);
             console.log(`Removed ${musicId} from the playlist`);
-            return {'status': 200}
+            return { status: 200 };
         }
     }
 

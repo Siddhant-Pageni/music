@@ -14,9 +14,7 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
         <link rel="stylesheet" href="./resources/index.css" />
-        <!-- <link rel="stylesheet" href="./resources/audioPlayer.css" /> -->
         <script src="./resources/index.js"></script>
-        <!-- <script src="./resources/audioPlayer.js"></script> -->
     </head>
     <body>
         <nav class="navbar navbar-dark bg-dark">
@@ -96,30 +94,7 @@
         <div class="container" id="beforeLogin">
             <div class="row">Welcome to the Music Website! LOGIN to start!</div>
         </div>
-        <!-- <div id="audio-player-container">
-            <audio src="https://ia800905.us.archive.org/19/items/FREE_background_music_dhalius/backsound.mp3" preload="metadata" loop>
-            <button id="play-icon"></button>
-            <span id="current-time" class="time">0:00</span>
-            <input type="range" id="seek-slider" max="100" value="0">
-            <span id="duration" class="time">0:00</span>
-            <output id="volume-output">100</output>
-            <input type="range" id="volume-slider" max="100" value="100">
-            <button id="mute-icon"></button>
-        </div> -->
-        <!-- <div id="audio-player-container">
-            <p>Audio Player</p>
-            <audio
-                src="https://ia800905.us.archive.org/19/items/FREE_background_music_dhalius/backsound.mp3"
-                preload="metadata"
-                loop
-            ></audio>
-            <button id="play-icon"></button>
-            <span id="current-time" class="time">0:00</span>
-            <input type="range" id="seek-slider" max="100" value="0" />
-            <span id="duration" class="time">0:00</span>
-            <output id="volume-output">100</output>
-            <input type="range" id="volume-slider" max="100" value="100" />
-            <button id="mute-icon"></button>
-        </div> -->
+        <div class="container playbar" id="playbar">
+        </div>
     </body>
 </html>
